@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-torch = "2.0.0"
+torch = "2.3.0"
 torchviz = "^0.0.2"
 torch-summary = "^1.4.5"
 onnx = "^1.16.1"
@@ -20,6 +20,11 @@ netron = "^7.8.2"
 docker = "^7.1.0"
 fire = "^0.6.0"
 
+
+[[tool.poetry.source]]
+name = "pytorch-gpu"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
 
 [build-system]
 requires = ["poetry-core"]
