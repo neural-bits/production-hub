@@ -19,8 +19,6 @@ In this tutorial, we'll profile a MobileNet v2 CNN model on the following engine
 - About low-level TensorRT GPU memory management using c_api wrappers
 
 ---
-### Resources
-- 📝 [Inference Engines profilling MobileNetv2]()
 
 ### Dependencies
 - [Python (version 3.11)](https://www.python.org/downloads/)
