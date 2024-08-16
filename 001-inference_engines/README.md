@@ -51,3 +51,12 @@ make install
 
 ### Usage
 In your jupyter notebook, select the newly created env, should be named `py311_inference_engines` and start iterating the description + code blocks within the notebook.
+
+
+
+echo 'export PATH=/usr/local/cuda-12.1/bin${PATH:+:${PATH}}' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/usr/local/cuda-12.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}' >> ~/.bashrc
+source ~/.bashrc
+
+	
+huggingface-cli download QuantFactory/Phi-3-mini-128k-instruct-GGUF --local-dir . --local-dir-use-symlinks False --include='*Q8_0*gguf'
