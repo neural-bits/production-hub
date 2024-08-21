@@ -16,11 +16,8 @@ In this article, we'll go over how to prepare,set,serve and use a Image Classifi
 - how to connect to the server and perform inference using the HTTP protocol
 - how to pre-process/post-process the inputs/outputs from the server
 
-### Articles
-
-See the full article here ↓
-
-1. 📝[Article]()
+### Resources
+- 📝[Full Blog Article](https://neuralbits.substack.com/p/how-to-use-nvidia-triton-server-the)
 
 ---
 
@@ -28,9 +25,6 @@ See the full article here ↓
   - [Dependencies](#dependencies)
   - [Install](#install)
   - [Usage](#usage)
-  - [License](#license)
-  - [Contributors](#contributors)
-
 ------
 
 ### Dependencies
@@ -42,11 +36,12 @@ See the full article here ↓
 
 ### Install
 
-```First, let's install the nvidia-docker runtime that will allow the interface between docker containers and the underlying HW of the PC. In this case, the NVIDIA GPU.```
-As we use Make and Poetry to manage the project, to install the project, you have to run the following:
-```shell
-make install_nvidia_container_runtime
-```
+> **_NOTE:_** First, let's install the nvidia-docker runtime that will allow the interface between docker containers and the underlying HW of the PC. In this case, the NVIDIA GPU.
+> - As we use Make and Poetry to manage the project, to install the project, you have to run the following:
+  ```shell
+  make install_nvidia_container_runtime
+  ```
+
 
 Next, install the project dependencies using:
 ```shell
